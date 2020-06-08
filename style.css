@@ -1,0 +1,160 @@
+body {
+  background: url("./assets/back.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.arrow {
+  transform: rotate(90deg);
+  width: 250px;
+  position: absolute;
+  top: 90px;
+}
+
+#spin-btn {
+  background: transparent;
+}
+
+.float {
+  animation: float 1s infinite;
+}
+
+.col {
+  width: 50%;
+}
+
+.spin-btn {
+  height: 125px;
+}
+
+#spinner {
+  height: 500px;
+  position: relative;
+  /* display: none; */
+  z-index: 0;
+  /* left: 300px; */
+}
+
+.pin {
+  height: 100px;
+}
+
+.shake {
+  animation: shake 3s infinite;
+}
+
+.spin {
+  animation: spin 15s infinite;
+}
+
+.pop-up-content {
+  color: #ffd81f;
+  background: rgb(233, 43, 64);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 5%;
+  font-family: "Abril Fatface", cursive;
+  display: none;
+  animation: enlarge 1s infinite;
+}
+
+.instruct {
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
+  border: 0.5rem dotted #ffd81f;
+  background: rgba(255, 255, 255, 0.418);
+  padding: 0.5rem;
+  animation: enlarge 1s infinite;
+}
+
+.pop-up-content h1 {
+  font-size: 2rem;
+}
+
+.pop-up-para {
+  text-align: center;
+  font-size: 4rem;
+  border: 0.5rem dotted #ffd81f;
+}
+
+.wheel-stand {
+  position: absolute;
+  bottom: 5px;
+  z-index: -1;
+  height: 120px;
+  /* left: 30px; */
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  /* background: red; */
+  height: 100vh;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(3600deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    top: 70px;
+  }
+  50% {
+    top: 90px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    left: -5px;
+  }
+  25% {
+    left: 5px;
+  }
+  50% {
+    left: -5px;
+  }
+  75% {
+    left: 5px;
+  }
+
+  100% {
+    left: -5px;
+  }
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

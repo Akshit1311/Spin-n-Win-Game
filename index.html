@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel</title>
+
+    <!-- bs -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            id="arrow"
+            class="arrow float"
+            src="./assets/7-comic-arrow-1.png"
+          />
+          <h4 class="instruct">
+            PRESS "SPACE" KEY TO SPIN THE WHEEL
+          </h4>
+          <button id="spin-btn" class="btn" onclick="spin()">
+            <img class="spin-btn" src="./assets/spin-n-win-logo.png" alt="" />
+          </button>
+
+          <div class="pop-up-content">
+            <h1>You Won!!</h1>
+            <p class="pop-up-para"></p>
+          </div>
+        </div>
+        <div class="col">
+          <img class="pin" src="./assets/pin.png" alt="" />
+          <img id="spinner" class="shake" src="./assets/wheel.png" />
+          <img class="wheel-stand" src="./assets/stand.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="pop-up">
+      
+    </div> -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
