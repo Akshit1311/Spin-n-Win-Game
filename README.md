@@ -1,7 +1,10 @@
 # Spin-n-Win-Game
 Spin n Win Game using javascript,html and css for coding blocks challenge!
 
-Video Url: 
+LinkedIn Project URL : 
+https://www.linkedin.com/feed/update/urn:li:activity:6675776774179188736/
+
+Video Url : 
 https://youtu.be/vmLLm9-ece0
 
 ![Capture](https://user-images.githubusercontent.com/34763983/84043608-23f27d80-a9c4-11ea-9ed1-c9195067b964.PNG)
